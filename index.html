@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="shortcut icon"
+      href="assets/svg/logo_unvisited.svg"
+      type="image/x-icon"
+    />
+    <title data-i18="portfolio">Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="assets/svg/sprite.svg#logo_unvisited"></use>
+              </svg>
+            </a>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item nav-item-skills">
+              <a href="#skills" class="nav-link" data-i18="skills">Skills</a>
+            </li>
+            <li class="nav-item nav-item-portfolio">
+              <a href="#portfolio" class="nav-link" data-i18="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item nav-item-video">
+              <a href="#video" class="nav-link" data-i18="video">Video</a>
+            </li>
+            <li class="nav-item nav-item-price">
+              <a href="#price" class="nav-link" data-i18="price">Price</a>
+            </li>
+            <li class="nav-item nav-item-contacts">
+              <a href="#contacts" class="nav-link" data-i18="contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+
+          <div class="nav-link nav-languages">
+            <a class="nav-language en" href="#">EN</a> /
+            <a class="nav-language ru" href="#">RU</a>
+          </div>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="light-dark-theme">
+            <div class="light"></div>
+            <div class="dark"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main-container">
+        <section class="section section-hero">
+          <div class="hero-text"></div>
+          <h1 data-i18="hero-title">Alexa Rise</h1>
+          <p data-i18="hero-text">
+            Save sincere emotions, romantic feelings and 
+            happy moments of life together with professional
+            photographer Alexa Rise
+          </p>
+          <button class="btn" data-i18="hire">Hire me</button>
+        </section>
+
+        <section class="section section-skills" id="skills">
+          <h2 class="skills-title" data-i18="skills">Skills</h2>
+          <div class="skills-items">
+            <div class="skill-item">
+              <p class="skill-item-title" data-i18="skill-title-1">
+                Digital photography
+              </p>
+              <p data-i18="skill-text-1">
+                High-quality photos in the studio
+                and on the nature
+              </p>
+            </div>
+            <div class="skill-item">
+              <p class="skill-item-title" data-i18="skill-title-2">
+                Video shooting
+              </p>
+              <p data-i18="skill-text-2">
+                Capture your moments so that
+                they always stay with you
+              </p>
+            </div>
+            <div class="skill-item">
+              <p class="skill-item-title" data-i18="skill-title-3">Retouch</p>
+              <p data-i18="skill-text-3">
+                I strive to make photography
+                surpass reality
+              </p>
+            </div>
+            <div class="skill-item">
+              <p class="skill-item-title" data-i18="skill-title-4">Audio</p>
+              <p data-i18="skill-text-4">
+                Professional sounds recording
+                for video, advertising, portfolio
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section section-portfolio" id="portfolio">
+          <h2 data-i18="portfolio">Portfolio</h2>
+          <div class="btns-portfolio">
+            <button
+              class="btn btn-portfolio"
+              data-season="winter"
+              data-i18="winter"
+            >
+              Winter
+            </button>
+            <button
+              class="btn btn-portfolio"
+              data-season="spring"
+              data-i18="spring"
+            >
+              Spring
+            </button>
+            <button
+              class="btn btn-portfolio"
+              data-season="summer"
+              data-i18="summer"
+            >
+              Summer
+            </button>
+            <button
+              class="btn btn-portfolio"
+              data-season="autumn"
+              data-i18="autumn"
+            >
+              Autumn
+            </button>
+          </div>
+          <div class="portfolio-imgs">
+            <img
+              src="assets/img/summer/1.png"
+              class="portfolio-image portfolio-img1 summer"
+            />
+            <img
+              src="assets/img/winter/2.png"
+              class="portfolio-image portfolio-img2 winter"
+            />
+            <img
+              src="assets/img/summer/3.png"
+              class="portfolio-image portfolio-img3 summer"
+            />
+            <img
+              src="assets/img/spring/4.png"
+              class="portfolio-image portfolio-img4 spring"
+            />
+            <img
+              src="assets/img/autumn/5.png"
+              class="portfolio-image portfolio-img5 autumn"
+            />
+            <img
+              src="assets/img/autumn/6.png"
+              class="portfolio-image portfolio-img6 autumn"
+            />
+          </div>
+        </section>
+
+        <!-- Video -->
+
+        <section class="section section-video" id="video">
+          <h2 data-i18="video">Video</h2>
+
+          <div class="video-player">
+
+            <div class="btn-play">
+              <a>
+                <svg class="btn-play-icon">
+                  <use xlink:href="assets/svg/sprite.svg#Play_Unvisited"></use>
+                </svg>
+              </a>
+            </div>
+
+            <video class="video-player-viewer" src="video/video.mp4" poster="assets/img/video-player.png">
+            </video>
+            
+            <div class="player-controls">
+              <div type="range" class="progress" name="progress"><a href=""></a>
+                <div class="progress-filled"></div>
+              </div>
+              
+                <div class="c-play-pause">
+                  <div class="play">
+                  </div>
+                  <div class="pause hide"></div>
+                </div>
+  
+                <div class="player-btns">
+                  <div class="player-btn-volume">
+                    <button class="mute hide"></button>
+                    <button class="volume-btn"></button>
+                  </div>
+
+                  <div class="volume-slider volume">
+                    <div class="volume-slider-filled"></div>
+                  </div>
+                  <button data-skip="-5" class="player-btn player-btn-skip">« skip</button>
+                  <button data-skip="5" class="player-btn player-btn-skip">skip »</button>
+                  <div class="full full-screen"></div>
+                </div>
+              
+            </div>
+
+          </div>
+        </section>
+        <section class="section section-price" id="price">
+          <h2>Price</h2>
+          <div class="cards">
+            <div class="card">
+              <h3 class="card-title">Standard</h3>
+              <h4 class="card-price">500 $</h4>
+              <span class="card-descr" data-i18="price-description-1-span-1"
+                >One location</span
+              ><span class="card-descr" data-i18="price-description-1-span-2"
+                >120 photos in color</span
+              ><span class="card-descr" data-i18="price-description-1-span-3"
+                >12 photos in retouch</span
+              ><span class="card-descr" data-i18="price-description-1-span-4"
+                >Readiness 2-3 weeks</span
+              ><span class="card-descr" data-i18="price-description-1-span-5"
+                >Make up, visage</span
+              ><button class="btn btn-card" data-i18="order">
+                Order shooting
+              </button>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Premium</h3>
+              <h4 class="card-price">700 $</h4>
+              <span class="card-descr" data-i18="price-description-2-span-1"
+                >One or two locations</span
+              ><span class="card-descr" data-i18="price-description-2-span-2"
+                >200 photos in color</span
+              ><span class="card-descr" data-i18="price-description-2-span-3"
+                >20 photos in retouch</span
+              ><span class="card-descr" data-i18="price-description-2-span-4"
+                >Readiness 1-2 weeks</span
+              ><span class="card-descr" data-i18="price-description-2-span-5"
+                >Make up, visage</span
+              ><button class="btn btn-card" data-i18="order">
+                Order shooting
+              </button>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Gold</h3>
+              <h4 class="card-price">1000 $</h4>
+              <span class="card-descr" data-i18="price-description-3-span-1"
+                >Three locations or more</span
+              ><span class="card-descr" data-i18="price-description-3-span-2"
+                >300 photos in color</span
+              ><span class="card-descr" data-i18="price-description-3-span-3"
+                >50 photos in retouch</span
+              ><span class="card-descr" data-i18="price-description-3-span-4"
+                >Readiness 1 week</span
+              ><span class="card-descr" data-i18="price-description-3-span-5"
+                >Make up, visage, hairstyle</span
+              ><button class="btn btn-card" data-i18="order">
+                Order shooting
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="section section-contacts" id="contacts">
+          <div class="contacts-bg">
+            <div class="contacts-wrapper">
+              <div class="contacts-container">
+                <h3 class="contacts-title" data-i18="contacts">Contact me</h3>
+                <input class="email" type="email" placeholder="E-mail" data-i18="e-mail" />
+                <input class="phone" type="tel" placeholder="Phone" data-i18="phone"/>
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  data-i18="message"
+                ></textarea>
+                <button class="btn btn-contacts" data-i18="send-message">
+                  Send message
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-item footer-item-github">
+          <a href="https://github.com/Pacman766" target="blank">
+            <p>© 2022 github</p>
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="https://rs.school/js-stage0/" target="blank">
+            <p>Rolling Scopes School</p>
+          </a>
+        </div>
+        <ul class="footer-items">
+          <li class="footer-item-social">
+            <a href="https://github.com">
+              <svg class="icon social-icon">
+                <use xlink:href="assets/svg/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-item-social">
+            <a href="#">
+              <svg class="icon social-icon">
+                <use xlink:href="assets/svg/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-item-social">
+            <a href="https://github.com">
+              <svg class="icon social-icon">
+                <use xlink:href="assets/svg/sprite.svg#tw"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-item-social pinterest">
+            <a href="#">
+              <svg class="icon social-icon">
+                <use xlink:href="assets/svg/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
